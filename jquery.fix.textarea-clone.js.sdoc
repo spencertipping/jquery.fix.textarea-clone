@@ -5,7 +5,7 @@ Motivation.
 jQuery's clone() method works in most cases, but it fails to copy the value of textareas. This patch replaces jQuery's clone() method with a wrapper that fills in textarea values.
 
 (function (original) {
-  $.fn.clone = function () {
+  jQuery.fn.clone = function () {
     var       result = original.apply (this, arguments),
         my_textareas = this.find('textarea'),
     result_textareas = result.find('textarea');
@@ -15,4 +15,4 @@ jQuery's clone() method works in most cases, but it fails to copy the value of t
 
     return result;
   };
-}) ($.fn.clone);
+}) (jQuery.fn.clone);
