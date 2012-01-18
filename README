@@ -1,6 +1,2 @@
-Textarea clone bug workaround | Spencer Tipping
-Licensed under the terms of the MIT source code license
-
-Replaces jQuery's clone() method to support textarea value copying.
-Not a particularly elegant hack, but sometimes you just have to get
-the job done :)
+NOTE! This repository is officially deprecated. You should use
+github.com/spencertipping/jquery.fix.clone instead.
